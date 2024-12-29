@@ -1,0 +1,13 @@
+@import '@/styles/variables';
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $z-topbar;
+
+  img {
+    width: 100%;
+  }
+}

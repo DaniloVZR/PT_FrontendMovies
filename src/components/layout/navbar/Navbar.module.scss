@@ -1,0 +1,52 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.navbar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: $primary-color;
+  z-index: $z-navbar;
+  border-bottom: 1px solid #eee;
+
+  .container {
+    @include container;
+    @include flex-center;
+    justify-content: space-between;
+
+    .categories ul {
+      padding: 0;
+      font-weight: bold;
+      color: #fff;
+      list-style: none;
+      @include flex-center;
+      gap: 2rem;
+
+      li {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: #c9c9c9;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: .5rem;
+
+      button {
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

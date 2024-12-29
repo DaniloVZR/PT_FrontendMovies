@@ -1,0 +1,58 @@
+@import '@/styles/variables';
+
+.newsletterContent {
+  display: flex;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  .verticalText {
+    color: $secondary-color;
+    font-weight: lighter;
+    writing-mode: vertical-lr;
+    font-size: x-large;
+    border-right: 1px solid $secondary-color;
+
+    p {
+      margin: 0;
+
+      &:last-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .newsletterMain {
+    text-transform: uppercase;
+    color: rgb(54, 54, 54);
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  .suscription {
+    color: rgb(54, 54, 54);
+    width: 40%;
+    margin: 0 auto;
+
+    .suscriptionButton {
+      background-color: $secondary-color;
+      display: flex;
+      gap: .5rem;
+      justify-content: center;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition-duration: .4s;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+}

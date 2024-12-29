@@ -1,0 +1,36 @@
+.services {
+  background-color: #efeff1;
+  width: 100%;
+
+  .servicesContent {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    gap: 4rem;
+    padding: 3rem 0;
+
+    div {
+      display: flex;
+      gap: 1rem;
+      flex: 1;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          margin: 0;
+          font-size: small;
+          font-weight: bolder;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: #696969;
+          font-size: small;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

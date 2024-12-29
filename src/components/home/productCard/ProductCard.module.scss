@@ -1,0 +1,68 @@
+@import '@/styles/variables';
+
+.productCard {
+  width: 250px;
+  position: relative;
+
+  .productCardInfo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .sizes {
+      display: flex;
+      gap: .4rem;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 8%;
+      z-index: 1;
+
+      .size {
+        background-color: #fff;
+        padding: 4px;
+
+        &:focus {
+          color: #fff;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .buyButton {
+      opacity: 1; // Haz que el botón sea completamente visible.
+      transform: translateY(0); // Devuelve la posición a la normal.
+    }
+  }
+
+  .brand {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .price {
+    font-weight: bold;
+  }
+
+  .buyButton {
+    opacity: 0; // Inicialmente oculto con opacidad.
+    transform: translateY(20px); // Mueve el botón hacia abajo al inicio.
+    transition: opacity 0.3s ease, transform 0.3s ease; // Transición suave para opacidad y posición.
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    border: 1px solid $secondary-color;
+    background-color: #fff;
+    color: $secondary-color;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
