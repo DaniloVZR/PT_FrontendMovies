@@ -54,5 +54,32 @@
       }
     }
   }
+}
 
+@media (max-width: 768px) {
+  .newsletterContent {
+    align-content: start;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: .6rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 100%;
+
+    .verticalText {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .newsletterMain {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .suscription {
+      width: 80%;
+      margin: 0 auto;
+      grid-area: 2 / 1 / 3 / 3;
+    }
+  }
 }

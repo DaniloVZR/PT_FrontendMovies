@@ -19,15 +19,36 @@ import youtube from "../../assets/social/icon-youtube.svg";
 import iconSic from "../../assets/footer/icon-sic.svg";
 import iconWeb from "../../assets/footer/icon-web.svg";
 
+// Banners desktop
 import chilloutDesktop from "../../assets/banners/banner-ppal-chillout-desktop.webp";
 import grinchDesktop from "../../assets/banners/banner-ppal-grinch-desktop.webp";
 import harryDesktop from "../../assets/banners/banner-ppal-harry-desktop.webp";
 import sharestoryDesktop from "../../assets/banners/banner-ppal-sharestory-desktop.webp";
 
+// Banners mobile
+import chilloutMobile from "../../assets/banners/banner-ppal-chillout-mobile.webp";
+import grinchMobile from "../../assets/banners/banner-ppal-grinch-mobile.webp";
+import harryMobile from "../../assets/banners/banner-ppal-harry-mobile.webp";
+import sharestoryMobile from "../../assets/banners/banner-ppal-sharestory-mobile.webp";
+
 import bag from "../../assets/promise/bag.svg";
 import locator from "../../assets/promise/locator.svg";
 import service from "../../assets/promise/service.svg";
 import shipping from "../../assets/promise/shipping.svg";
+
+import search from '../../assets/nav/search.svg';
+import pin from '../../assets/nav/pin.svg';
+import favorite from '../../assets/nav/favorite.svg';
+import user from '../../assets/nav/user.svg';
+import shoppingBag from '../../assets/nav/shopping-bag.svg';
+
+export const navIcons = [
+  { name: "search", source: search },
+  { name: "pin", source: pin },
+  { name: "favorite", source: favorite },
+  { name: "user", source: user },
+  { name: "shoppingBag", source: shoppingBag },
+]
 
 export const payment = [
   { name: "amex", source: amex },
@@ -69,6 +90,13 @@ export const bannerSlides = [
   { name: "grinch", source: grinchDesktop },
   { name: "harry", source: harryDesktop },
   { name: "sharestory", source: sharestoryDesktop },
+]
+
+export const bannerSlidesMobile = [
+  { name: "chilloutMobile", source: chilloutMobile },
+  { name: "grinchMobile", source: grinchMobile },
+  { name: "harryMobile", source: harryMobile },
+  { name: "sharestoryMobile", source: sharestoryMobile },
 ]
 
 export const services = [
