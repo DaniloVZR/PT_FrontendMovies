@@ -34,3 +34,10 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .servicesContent {
+    flex-wrap: wrap;
+  }
+}

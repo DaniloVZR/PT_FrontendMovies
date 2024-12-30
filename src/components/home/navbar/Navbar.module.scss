@@ -1,0 +1,86 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.navbar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: $primary-color;
+  z-index: $z-navbar;
+
+  .container {
+    @include container;
+    @include flex-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .categories {
+      ul {
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+        list-style: none;
+        @include flex-center;
+        gap: 2rem;
+
+        li {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: #c9c9c9;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+
+      button {
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .menuToggle button {
+    display: none;
+  }
+
+  // Ocultar acciones y categorías en mobile
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .categories {
+        display: none; // Ocultar categorías
+      }
+
+      .actions {
+        display: none; // Ocultar acciones
+      }
+    }
+
+    .menuToggle {
+      display: flex;
+      gap: .4rem;
+    }
+
+    .menuToggle button {
+      display: block;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

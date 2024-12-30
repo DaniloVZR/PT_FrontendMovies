@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import iconCall from "../../../../assets/contact/icon-call.svg";
 import iconChat from "../../../../assets/contact/icon-chat.svg";
@@ -74,6 +75,70 @@ const Footer = () => {
           </ul>
         </div>
 
+        <details className={styles.accordion}>
+          <summary>Contacto</summary>
+          <div>
+            <div>
+              <Image
+                src={iconChat}
+                width={20}
+                height={20}
+                alt="Icono Chat"
+              />
+              <p>Chat con un asesor whatsapp</p>
+            </div>
+            <div>
+              <Image
+                src={iconCall}
+                width={20}
+                height={20}
+                alt="Icono Llamada"
+              />
+              <p>Llamar +57 300 910 8311</p>
+            </div>
+            <div>
+              <Image
+                src={iconEmail}
+                width={20}
+                height={20}
+                alt="Icono Email"
+              />
+              <p>Escribir un correo</p>
+            </div>
+            <div>
+              <Image
+                src={iconLocator}
+                width={20}
+                height={20}
+                alt="Icono localización"
+              />
+              <p className={styles.location}>Localizador de tiendas</p>
+            </div>
+          </div>
+        </details>
+
+        <details className={styles.accordion}>
+          <summary>Ayuda</summary>
+          <ul>
+            <li>Quiénes somos</li>
+            <li>Localizador de tiendas</li>
+            <li>Trabaja con nosotros</li>
+            <li>Línea de transparencia y ética empresarial</li>
+            <li>Sitemap</li>
+          </ul>
+        </details>
+
+        <details className={styles.accordion}>
+          <summary>Empresa</summary>
+          <ul>
+            <li>Quiénes somos</li>
+            <li>Localizador de tiendas</li>
+            <li>Trabaja con nosotros</li>
+            <li>Línea de transparencia y ética empresarial</li>
+            <li>Sitemap</li>
+          </ul>
+        </details>
+
         <div className={styles.footerSection}>
           <h4>Medios de pago</h4>
           <div className={styles.gridPayment}>
@@ -99,6 +164,7 @@ const Footer = () => {
             </a>
           ))}
           <p>SIGUENOS</p>
+
         </div>
         <div>
           <Image src={footerIcons[1].source} alt={footerIcons[1].name} />
